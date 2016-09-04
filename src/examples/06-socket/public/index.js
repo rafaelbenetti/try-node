@@ -1,17 +1,20 @@
 (function(){
   'use strict';
 
-  var server = io.connect('http://localhost:8080');
-
-  server.on('connect', function(data) {
-    $('#messages').html('Connected to chat');
-    var nickname = prompt('What is yout nickname?');
-    server.emit('join', nickname);
-  });
-
-  $('form').submit(function(e) {
+  var socket = io();
+  $('#chat_form').submit(function(){
     var message = $('#text').val();
     socket.emit('messages', message);
+    $('#text').val('');
+    return false;
+  });
+
+  socket.on('connect', function(data) {
+    $('#status').html('Connected to chattr');
+    var nickname = prompt("What is your nickname?");
+    socket.emit('join', nickname);
+  });
+  socket.on('messages', function(msg){
     $('#messages').append($('<li>').text(msg));
   });
 })();
