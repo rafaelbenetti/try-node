@@ -1,0 +1,14 @@
+{
+  "name": "try-node",
+  "version": "1.0.0",
+  "description": "Let's do something cool!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael Benetti",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
