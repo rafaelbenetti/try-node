@@ -1,0 +1,22 @@
+.container {
+  margin: auto;
+  width: 50%;
+  border: 1px solid #e4d6d6;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.content {
+  min-height: 600px;
+}
+
+.input-group input {
+  width: 80%;
+  height: 25px;
+}
+
+.input-group button {
+  width: 17%;
+  height: 33px;
+  margin: 10px;
+}
