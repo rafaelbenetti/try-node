@@ -9,7 +9,7 @@ io.on('connection', function(socket){
     socket.nickname = name;
   });
   socket.on('messages', function(message){
-    var nickname = socket.nickname;
+    var nickname = '<span>' + socket.nickname + '</span>';
     io.emit('messages', nickname + ': ' + message);
   });
 });

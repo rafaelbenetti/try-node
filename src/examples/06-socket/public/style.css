@@ -31,6 +31,12 @@
 #messages li {
   padding: 5px 10px;
 }
+
+#messages li span {
+  color: #1d1e63;
+  font-weight: 900;
+}
+
 #messages li:nth-child(odd) {
   background: #eee;
 }

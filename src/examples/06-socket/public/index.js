@@ -16,7 +16,7 @@
   });
 
   socket.on('messages', function(msg){
-    $('#messages').append($('<li>').text(msg));
+    $('#messages').append($('<li>').append(msg));
   });
-  
+
 })();
