@@ -14,7 +14,9 @@
     var nickname = prompt("What is your nickname?");
     socket.emit('join', nickname);
   });
+
   socket.on('messages', function(msg){
     $('#messages').append($('<li>').text(msg));
   });
+  
 })();

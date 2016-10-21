@@ -11,7 +11,7 @@
 }
 
 .input-group input {
-  width: 80%;
+  width: 75%;
   height: 25px;
 }
 
@@ -19,6 +19,8 @@
   width: 17%;
   height: 33px;
   margin: 10px;
+  background-color: #42c5f4;
+  color: black;
 }
 
 #messages {
@@ -32,3 +34,31 @@
 #messages li:nth-child(odd) {
   background: #eee;
 }
+
+@media screen and (max-width: 1000px){
+    .input-group input {
+      width: 60%;
+    }
+    .input-group button {
+      width: 30%;
+    }
+    .container {
+      width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .input-group input {
+      width: 100%;
+    }
+    .input-group button {
+      width: 100%;
+      margin: 0;
+      margin-top: 10px;
+
+    }
+    .container {
+      width: 90%;      
+    }
+}
+
